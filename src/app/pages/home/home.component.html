@@ -1,0 +1,79 @@
+<div class="home">
+    <div class="container">
+        <h1 style="color: white; font-family: Verdana; text-align: center;">EL BUEN SABOR</h1>
+    </div>
+    <div class="row" style="margin: 1%;">
+        <h3 style="color: white; font-family: Verdana; text-align:center; ">
+          Se busca brindarle al consumidor la posibilidad de Tastear, es decir,
+          saborear la Patagonia con un click; ya sea para comenzar su día preparándose un desayuno andino,
+           con los mejores dulces e infusiones; cenar con amigos o familia los mejores ahumados y cervezas artesanales, acompañar sus comidas con exquisitas
+           mostazas y acompañamientos, o hacer el regalo más original.
+           <br>
+           Horarios de Atención: Lunes a Domingos 20:00 a 00:00. Sabados y Domingos 11:00 a 15:00
+        </h3>
+
+    </div>
+    <div class="container" style="text-align:center;">
+        <ul class="steps">
+            <li style="font-family: Verdana;"><img class="imagenPaso" src="../../assets/imagenes/adress.png"
+                    alt="iconoDireccion"> Ingresá o
+                Registrate con tus datos</li>
+            <li style="font-family: Verdana;"><img class="imagenPaso" src="../../assets/imagenes/burguer.png"
+                    alt="iconoComida"> Elegí tu comida</li>
+            <li style="font-family: Verdana;"><img class="imagenPaso" src="../../assets/imagenes/creditcard.png"
+                    alt="iconoPago"> Selecciona medio de
+                pago y espera tu comida</li>
+        </ul>
+    </div>
+</div>
+<div>
+    <div class="row">
+        <div class="col-sm-12">
+            <h1 style="text-align: center; font-family: Verdana; margin-top: 1%; text-align: center;"><b>Algunos de
+                    nuestros mejores platos</b></h1>
+        </div>
+    </div>
+    <div class="row" style="text-align: center;">
+        <div class="col-sm-4" *ngFor="let plato of platos">
+            <a href="/catalogo"><img src="{{plato.imagen}}" alt="plato" class="plate"></a>
+            <h2>{{plato.nombre}}</h2>
+        </div>
+    </div>
+</div>
+<div class="row" style="margin: 1%;">
+    <div class="col-sm-12">
+      <p style="text-align:center; margin-top: 2%; font-size:160%;"><b>Imágenes de nuestro local</b></p>
+        <h3 style="font-family: Verdana; text-align:center;">El Buen Sabor nace en 2010 como un proyecto para poder acercar los Productos de la Patagonia,
+           a una gran ciudad como Mendoza, que tenía una oferta más reducida de opciones gourmet, limitándose solo hasta ese entonces, a sabores locales.
+        </h3>
+    </div>
+    <div class="col-sm-6" style="text-align: center;">
+        <img style="border: 1px solid #ddd;
+        border-radius: 4px;
+        padding: 5px;"src="../../../assets/imagenes/restaurante.jpg" width="100%" />
+    </div>
+    <div class="col-sm-6" style="text-align: center;">
+        <img style="border: 1px solid #ddd;
+        border-radius: 4px;
+        padding: 5px;" src="../../../assets/imagenes/restaurante2.jpg" width="100%" />
+    </div>
+    <div class="col-sm-12">
+        <p style="text-align:center; margin-top: 2%; font-size:160%;"><b>Nuestra Ubicación</b> </p>
+    </div>
+    <div class="col-sm-12">
+        <p style="text-align:center;"><img style="border-radius: 50%;" width="60%" height="400px" src="../../../assets/imagenes/ubicacion.png" ></p>
+        <h3 style="text-align:center;">Los esperamos en Avenida siempre viva 123 Dorrego, Guaymallen</h3>
+    </div>
+</div>
+<div class="footer">
+    <footer>
+        <div class="container">
+            <div class="row">
+                <p>EL BUEN SABOR - LABORATORIO 4 - UNIVERSIDAD TECNOLOGICA NACIONAL</p>
+            </div>
+            <div class="row">
+                <p>Sitio web de Evaluacion creado por Nelson Sosa</p>
+            </div>
+        </div>
+    </footer>
+</div>

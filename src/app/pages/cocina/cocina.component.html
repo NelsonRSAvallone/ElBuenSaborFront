@@ -4,9 +4,9 @@
             <h1>COCINA</h1>
             <mat-tab-group class="m-2">
                 <mat-tab label="Comandas">
-                    <div class="container-fluid background">
+                    <div >
                         <div *ngIf="spinner">
-                            <i class="fas fa-sync-alt fa-spin fa-5x m-5"></i>
+                            <i class="fas fa-spinner fa-spin fa-5x m-5"></i>
                             <h2>Cargando Pedidos</h2>
                         </div>
                         <div class="row" *ngIf="!spinner">

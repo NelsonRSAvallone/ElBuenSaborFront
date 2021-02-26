@@ -7,6 +7,10 @@
     background-position: center;
     background-attachment: fixed;
 }
+.fondo{
+background-color: rgb(212, 211, 211);
+
+}
 .title{
     font-family: Verdana;
     word-spacing: 2px;

@@ -1,13 +1,14 @@
-<div class="raiz" style="margin: 1%;">
-    <div class="nulo" *ngIf="vcategoria === null">
-        <h1 class="titulocatalogo" style="font-family: Verdana;">¿QUE QUERÉS COMER HOY?</h1>
-        <h2 style="font-family: Verdana;">¡Haga click en alguna categoría para acceder a sus artículos!</h2>
-        <div class="container">
+
+<div class="raiz" Style="background-image: url('../../assets/imagenes/multiplesComidas.jpg');background-repeat: no-repeat;background-size: cover;" >
+    <div class="nulo" *ngIf="vcategoria === null" Style="background-image: url('../../assets/imagenes/wook.JPG');background-repeat: no-repeat;background-size: cover;">
+        <h1 class="titulocatalogo" style="font-family: Verdana; color:aliceblue">¿QUE QUERÉS COMER HOY?</h1>
+        <h2 style="font-family: Verdana;color:aliceblue">¡Haga click en alguna categoría para acceder a sus artículos!</h2>
+        <div class="container" >
             <div class="row">
                 <div class="col-sm-4" *ngFor="let categoria of categorias">
                     <a (click)="elegirCategoria(categoria.nombre)"><img class="imagencategoria" src="{{categoria.imagen}}"
-                            alt="categoria"></a>
-                    <h2 id="categorii">{{categoria.nombre}}</h2>
+                            alt="categoria" style="border: 2px solid rgb(8, 8, 7); border-radius: 25px;"></a>
+                    <h2 id="categorii" style="font-family: Verdana; color:aliceblue">{{categoria.nombre}}</h2>
                 </div>
             </div>
         </div>
@@ -83,12 +84,12 @@
                         <h1 class="titulocategoria">Categorias</h1>
                         <hr>
                         <h3 *ngFor="let categoria of categorias">
-                            <a class="categorianame" (click)="elegirCategoria(categoria.nombre)">
+                            <a class="categorianame" (click)="elegirCategoria(categoria.nombre)" style="color: aliceblue;">
                                 {{categoria.nombre}}
                             </a>
                         </h3>
                         <h3>
-                            <a class="categorianame" (click)="getBebidas()">
+                            <a class="categorianame" (click)="getBebidas()" style="color: aliceblue;">
                                 Bebidas
                             </a>
                         </h3>
